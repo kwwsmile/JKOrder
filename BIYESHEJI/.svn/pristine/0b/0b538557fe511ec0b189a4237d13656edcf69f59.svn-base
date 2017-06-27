@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:id="@+id/containerLayout"
+    tools:context="com.example.shoppingcart.ShoppingCartActivity">
+
+    <include layout="@layout/layout_mian_shopping_cart"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="#aa000000"
+        android:id="@+id/bottom"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+            <ImageView android:layout_centerInParent="true"
+                android:src="@drawable/icon_cart"
+                android:layout_width="32dp"
+                android:id="@+id/imgCart"
+                android:layout_height="32dp" />
+
+            <TextView android:gravity="center"
+                android:id="@+id/tvCount"
+                android:layout_marginTop="5dp"
+                android:textColor="#fff"
+                android:text="1"
+                android:visibility="gone"
+                android:layout_marginRight="5dp"
+                android:textSize="12sp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/circle_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="￥ 0"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/tvCost"
+            android:layout_height="wrap_content" />
+
+        <TextView android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:text="￥100元起送"
+            android:id="@+id/tvTips"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+        <TextView android:textColor="#fff"
+            android:layout_width="120dp"
+            android:background="#22c222"
+            android:text="去结算"
+            android:onClick="onClick"
+            android:clickable="true"
+            android:id="@+id/tvSubmit"
+            android:visibility="gone"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>

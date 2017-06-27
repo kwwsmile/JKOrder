@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/tv_order_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="还没有订单，快去下单吧"
+        android:textColor="#000"
+        android:textSize="18sp" />
+    <ImageView
+        android:id="@+id/iv_order_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/tv_order_text"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/orderfood" />
+
+</RelativeLayout>

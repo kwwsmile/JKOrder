@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    tools:context="com.example.ayou.jk_takeout.mine.view.AccountDetail"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_accountdetail_top"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/color_minefragment_top"
+        >
+
+        <ImageView
+            android:id="@+id/iv_accountdetail_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_left_back"
+            />
+
+        <TextView
+            android:id="@+id/tv_accountdetail_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/iv_accountdetail_back"
+            android:text="账户信息"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_accountdetail_userName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/rl_accountdetail_top"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        >
+
+        <TextView
+            android:id="@+id/iv_accountdetail_userName_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="用户名"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_accountdetail_login_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="注册后可见"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_accountdetail_address"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/rl_accountdetail_userName"
+        android:layout_marginTop="2dp"
+        android:background="#fff"
+        >
+
+        <TextView
+            android:id="@+id/tv_accountdetail_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="收货地址"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_accountdetail_security"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/rl_accountdetail_address"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+        >
+
+        <TextView
+            android:id="@+id/tv_accountdetail_security"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="安全设置"
+            android:textColor="#bfbfbf"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_accountdetail_bind_PhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/rl_accountdetail_security"
+        android:layout_marginTop="2dp"
+        android:background="#fff"
+        >
+
+        <TextView
+            android:id="@+id/tv_accountdetail_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="已绑定的手机号"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_accountdetail_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#bfbfbf"
+            android:text="注册后可见"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="90dp"
+            />
+
+        <TextView
+            android:id="@+id/iv_accountdetail_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="绑定"
+            android:textColor="#f00"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/rl_accountdetail_password"
+        android:background="#fff"
+        android:layout_below="@+id/rl_accountdetail_bind_PhoneNumber"
+        android:layout_marginTop="2dp"
+        >
+        <TextView
+            android:id="@+id/tv_accountdetail_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录密码"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_accountdetail_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textColor="#f00"
+            />
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#fff"
+        android:id="@+id/bt_loginactivity_exit"
+        android:layout_below="@+id/rl_accountdetail_password"
+        android:layout_marginTop="15dp"
+        android:text="退出登录"
+        android:textColor="#f00"
+        android:gravity="center"
+        />
+</RelativeLayout>

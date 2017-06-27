@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#eeeeee"
+    >
+
+    <RelativeLayout
+        android:id="@+id/minefragment_top"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/color_minefragment_top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/tv_minefragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="13dp"
+            android:text="我的"
+            android:textColor="#fff"
+            android:layout_marginLeft="160dp"
+            android:textSize="20dp"
+           />
+
+        <ImageView
+            android:id="@+id/iv_minefragment_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_minefragment"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:background="@drawable/ic_my_more_setting"
+            />
+
+        <TextView
+            android:id="@+id/tv_minefragment_register_or_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38dp"
+            android:layout_marginTop="60dp"
+            android:text="登陆／注册"
+            android:textColor="#fff"
+            android:clickable="true"
+            android:onClick="onClick"
+            />
+
+        <ImageView
+            android:id="@+id/iv_minefragment_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_minefragment_register_or_login"
+            android:layout_below="@+id/tv_minefragment_register_or_login"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_main_my_phone"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_minefragment_enjoy_priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_minefragment_register_or_login"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/iv_minefragment_phone"
+            android:text="登陆后可享受更多特权"
+            android:textColor="#fff"
+            />
+
+        <ImageView
+            android:id="@+id/iv_minefragment_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_minefragment_setting"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/arrow_right_white"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:layout_alignTop="@+id/iv_minefragment_phone"
+            android:layout_alignRight="@+id/iv_minefragment_setting"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_minefragment_two"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/minefragment_top"
+        android:background="#fff"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_minefragment_mine_money"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:onClick="onClick"
+            >
+
+            <ImageView
+                android:id="@+id/iv_fragment_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_my_wallet"
+                />
+
+            <TextView
+                android:id="@+id/tv_fragment_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_fragment_money"
+                android:text="我的余额"
+                android:layout_marginTop="2dp"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/rl_minefragment_mine_scores"
+            android:clickable="true"
+            android:onClick="onClick"
+
+            >
+
+            <ImageView
+                android:id="@+id/iv_fragment_scores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_my_score"
+                />
+
+            <TextView
+                android:id="@+id/tv_fragment_scores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_fragment_scores"
+                android:text="我的积分"
+                android:layout_marginTop="2dp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_minefragment_three"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@+id/ll_minefragment_two"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/rl_minefragment_click"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:background="#fff"
+            >
+            <ImageView
+                android:id="@+id/iv_minefragment_click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_score_sign"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                />
+
+                <TextView
+                    android:id="@+id/tv_minefragment_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="每日签到"
+                    android:layout_toRightOf="@+id/iv_minefragment_click"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/rl_minefragment_shop"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:background="#fff"
+            android:layout_marginTop="1dp"
+            >
+
+            <ImageView
+                android:id="@+id/iv_minefragment_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_score_mall"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_minefragment_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="积分商城"
+                android:layout_toRightOf="@+id/iv_minefragment_shop"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

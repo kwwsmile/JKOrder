@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ayou.jk_takeout.mine.view.SettingActivity"
+    android:background="#eeeeee"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_settingactivity_top"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/color_minefragment_top"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:id="@+id/iv_settinactivity"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_left_back"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            android:onClick="onClick"
+            />
+          <TextView
+              android:id="@+id/tv_setttingactivity_setting"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="设置"
+              android:textColor="#fff"
+              android:layout_toRightOf="@+id/iv_settinactivity"
+              android:layout_marginLeft="20dp"
+              android:textSize="25dp"
+              />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_settingactivity_icon"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="@drawable/logo"
+        android:layout_below="@+id/rl_settingactivity_top"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_settingactivity_describe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JK外卖2.0"
+        android:layout_below="@+id/iv_settingactivity_icon"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_settingactivity_clearLruche"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#fff"
+        android:layout_below="@+id/tv_settingactivity_describe"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        >
+        <TextView
+            android:id="@+id/tv_settingactivity_clearLruche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清除图片缓存"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_setttingactivity_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="0KB"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_settingactivity_update"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/rl_settingactivity_clearLruche"
+        android:background="#fff"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        >
+
+        <TextView
+            android:id="@+id/tv_settingactivity_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="检查更新"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

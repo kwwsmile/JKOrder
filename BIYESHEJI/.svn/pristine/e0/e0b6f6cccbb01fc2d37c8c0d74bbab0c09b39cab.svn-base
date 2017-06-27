@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ayou.jk_takeout.mine.view.NoAddressActvity"
+    android:background="#eeeeee"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_loginactivity_top"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/color_minefragment_top"
+        >
+        <ImageView
+            android:id="@+id/iv_loginactivity_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_left_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:onClick="onClick"
+            />
+
+        <TextView
+            android:id="@+id/tv_loginactivity_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收货地址"
+            android:textColor="#fff"
+            android:layout_toRightOf="@+id/iv_loginactivity_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            />
+
+</RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_haveNoAddress_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_haveNoActivity"
+        android:background="@drawable/ic_adress_empty"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        />
+     <TextView
+         android:text="没有收货地址"
+         android:id="@+id/tv_haveNoActivity"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         android:textSize="18dp"
+         android:textStyle="bold"
+         />
+
+    <TextView
+        android:id="@+id/iv_haveNoAddress_addAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="快去添加一个地址吧"
+        android:textColor="#CDC5BF"
+        android:layout_below="@+id/tv_haveNoActivity"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/bt_haveNoAddress"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:text="+ 新增地址"
+        android:textColor="#f00"
+        android:onClick="onClick"
+        android:textSize="20dp"
+        />
+</RelativeLayout>

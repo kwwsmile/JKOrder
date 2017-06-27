@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ayou.jk_takeout.mine.view.WriteAddressActivity"
+    >
+    <RelativeLayout
+        android:id="@+id/rl_writeAddress_top"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/color_minefragment_top"
+        >
+
+        <ImageView
+            android:id="@+id/iv_writeAddress_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_left_back"
+            android:clickable="true"
+            android:onClick="onClick"
+            />
+
+        <TextView
+            android:id="@+id/tv_writeAddressy_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/iv_writeAddress_back"
+            android:text="百度定位"
+            android:textColor="#fff"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_below="@+id/rl_writeAddress_top"
+        android:id="@+id/bt_search"
+        android:textColor="#fff"
+        android:text="定位"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:background="@drawable/selector_loginactivity_button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onClick"
+        />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/bt_search"
+            android:text="定位结果为："
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#000"
+            android:textSize="20dp"
+            />
+
+    <com.baidu.mapapi.map.MapView
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tv_location"
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.baidu.mapapi.map.MapView>
+
+</RelativeLayout>

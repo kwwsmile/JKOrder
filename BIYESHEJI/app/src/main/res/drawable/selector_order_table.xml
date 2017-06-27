@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--按钮被点击后显示的图片-->
+    <item android:drawable="@drawable/ic_bottom_tab_order_selector" android:state_checked="true"></item>
+    <!--按钮没有被点击显示的图片-->
+    <item android:drawable="@drawable/ic_bottom_tab_order_normal" android:state_checked="false"></item>
+</selector>

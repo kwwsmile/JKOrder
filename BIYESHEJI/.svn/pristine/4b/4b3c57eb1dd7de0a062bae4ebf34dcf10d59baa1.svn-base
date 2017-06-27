@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_order2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/selector_loginactivity_button"
+        android:text="登录/注册"
+        android:textColor="#fff" />
+
+
+    <TextView
+        android:id="@+id/tv_order2_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_order2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="您还没登录，请登录后查看订单"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/iv_order2_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@id/tv_order2_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/login" />
+
+
+</RelativeLayout>

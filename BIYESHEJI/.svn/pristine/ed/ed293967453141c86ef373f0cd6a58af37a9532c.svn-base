@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    >
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_class_one_fastfood"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:src="@drawable/xiaochikuaican" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_class_one_fastfood"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="小吃快餐" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_class_one_chinese"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:src="@drawable/zhongshijiancan" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_class_one_chinese"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="中式简餐" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_class_one_chicken"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:src="@drawable/zhajizhachuan1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_class_one_chicken"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="炸鸡炸串" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_class_one_noodle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:src="@drawable/miantiaomixian1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_class_one_noodle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="面条米线" />
+    </RelativeLayout>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_class_one_place"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:src="@drawable/difangxiaochi1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_class_one_place"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="地方小吃" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_class_one_seafood"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:src="@drawable/haixianshaokao" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_class_one_seafood"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="海鲜烧烤" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_class_one_fruit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:src="@drawable/shuiguoshucai" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_class_one_fruit"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="水果蔬菜" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_class_one_drink"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:src="@drawable/tianpinyinliao" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_class_one_drink"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="甜点饮品" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

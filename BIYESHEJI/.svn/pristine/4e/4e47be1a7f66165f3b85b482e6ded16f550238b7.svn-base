@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    tools:context="com.example.ayou.jk_takeout.mine.view.RevisePassword"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_reviseactivity_top"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/color_minefragment_top"
+        >
+
+        <ImageView
+            android:id="@+id/iv_reviseactivity_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_left_back"
+            android:clickable="true"
+            android:onClick="onClick"
+            />
+
+        <TextView
+            android:id="@+id/tv_reviseactivity_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/iv_reviseactivity_back"
+            android:text="修改密码"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_reviseactivity_old_password"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/rl_reviseactivity_top"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        >
+
+        <EditText
+            android:id="@+id/et_reviseactivity_old_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:hint="请输入您的原始密码"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/rl_reviseactivity_new_passsword"
+        android:background="#fff"
+        android:layout_below="@+id/rl_reviseactivity_old_password"
+        android:layout_marginTop="2dp"
+        >
+        <EditText
+            android:id="@+id/et_reviseactivity_new_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="请输入新密码"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/rl_registeractivity_review"
+        android:background="#fff"
+        android:layout_below="@+id/rl_reviseactivity_new_passsword"
+        android:layout_marginTop="2dp"
+        >
+        <EditText
+            android:hint="请再次输入新密码"
+            android:id="@+id/et_reviseactivity_review"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_revise_review"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/rl_registeractivity_review"
+        android:background="@drawable/selector_loginactivity_button"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="17dp"
+        android:text="修改"
+        android:textColor="#fff"
+        />
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="送达时间"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="尽快送达"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/text_black"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/btn_numpicker_press"
+        />
+
+    <EditText
+        android:id="@+id/check_out_et"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:hint="订单备注"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/btn_numpicker_press"
+        />
+
+</LinearLayout>

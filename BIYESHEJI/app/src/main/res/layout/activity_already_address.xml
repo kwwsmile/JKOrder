@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    tools:context="com.example.ayou.jk_takeout.mine.view.AlreadyAddressActivity"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_loginactivity_top"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/color_minefragment_top"
+        >
+
+        <ImageView
+            android:id="@+id/iv_loginactivity_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_left_back"
+            android:clickable="true"
+            android:onClick="onClick"
+            />
+
+        <TextView
+            android:id="@+id/tv_loginactivity_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/iv_loginactivity_back"
+            android:gravity="center"
+            android:text="配送地址"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/rl_loginactivity_top"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        >
+
+        <TextView
+            android:id="@+id/tv_alreadyAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="配送地址:"
+            android:textColor="#BEBEBE"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_firstline"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/tv_alreadyAddress"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tv_secondline"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/tv_firstline"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

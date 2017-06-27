@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EeEeEe"
+    tools:context="com.example.ayou.jk_takeout.mine.view.HaveAddressActivity"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_haveaddressactivity_top"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/color_minefragment_top"
+        >
+
+        <ImageView
+            android:id="@+id/iv_haveaddressactivity_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_left_back"
+            android:clickable="true"
+            android:onClick="onClick"
+            />
+
+        <TextView
+            android:id="@+id/tv_haveaddressactivity_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/iv_haveaddressactivity_back"
+            android:text="新增地址"
+            android:textColor="#fff"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_haveaddressactivity_bottom_1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/rl_haveaddressactivity_top"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        >
+
+        <TextView
+            android:id="@+id/tv_haveaddressactivity_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="联系人"
+            android:textColor="#000"
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:id="@+id/et_contactName"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv_haveaddressactivity_contact"
+            android:layout_marginLeft="20dp"
+            android:hint="你的姓名"
+            android:background="@null"
+            />
+
+    </RelativeLayout>
+
+   <RelativeLayout
+       android:id="@+id/rl_haveaddressactivity_bottom_2"
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:background="#fff"
+       android:layout_marginTop="2dp"
+       android:layout_below="@+id/rl_haveaddressactivity_bottom_1"
+       >
+       <CheckBox
+           android:id="@+id/ck_left"
+           android:text="男士"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="100dp"
+           android:layout_centerVertical="true"
+           />
+
+       <CheckBox
+           android:text="女士"
+           android:id="@+id/ck_right"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@+id/ck_left"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="20dp"
+           />
+   </RelativeLayout>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:background="#fff"
+       android:id="@+id/rl_haveaddressactivity_bottom_3"
+       android:layout_below="@+id/rl_haveaddressactivity_bottom_2"
+       android:layout_marginTop="2dp"
+       >
+
+       <TextView
+           android:id="@+id/tv_haveaddressactivity_phoneNumber"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="联系电话"
+           android:textSize="20dp"
+           android:textColor="#000"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="10dp"
+           />
+       <EditText
+           android:id="@+id/et_Phone"
+           android:layout_width="200dp"
+           android:layout_height="match_parent"
+           android:layout_toRightOf="@id/tv_haveaddressactivity_phoneNumber"
+           android:layout_marginLeft="10dp"
+           android:layout_centerVertical="true"
+           android:background="@null"
+           android:hint="你的手机号"
+           />
+   </RelativeLayout>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:background="#fff"
+       android:layout_marginTop="2dp"
+       android:layout_below="@+id/rl_haveaddressactivity_bottom_3"
+       android:id="@+id/rl_haveaddressactivity_bottom_4"
+       >
+
+       <TextView
+           android:id="@+id/tv_haveaddressactivity_location"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="定位坐标"
+           android:textSize="20dp"
+           android:textColor="#000"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="10dp"
+           android:clickable="true"
+           android:onClick="onClick"
+           />
+       <EditText
+           android:id="@+id/tv_haveaddressactivity_location_right"
+           android:layout_width="200dp"
+           android:layout_height="match_parent"
+           android:layout_toRightOf="@+id/tv_haveaddressactivity_location"
+           android:hint="定位 小区/写字楼/学校"
+           android:gravity="center_vertical"
+           android:layout_marginLeft="20dp"
+           android:clickable="true"
+           android:onClick="onClick"
+           android:background="@null"
+           />
+   </RelativeLayout>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:layout_marginTop="2dp"
+       android:background="#fff"
+       android:layout_below="@+id/rl_haveaddressactivity_bottom_4"
+       android:id="@+id/rl_haveaddressactivity_bottom_5"
+       >
+       <TextView
+           android:id="@+id/tv_haveaddressactivity_detail_location"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="详细地址"
+           android:textSize="20dp"
+           android:textColor="#000"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="10dp"
+           />
+
+       <EditText
+           android:id="@+id/et_haveaddressactivity_detail_location"
+           android:layout_width="200dp"
+           android:layout_height="match_parent"
+           android:layout_toRightOf="@+id/tv_haveaddressactivity_detail_location"
+           android:layout_marginLeft="10dp"
+           android:background="@null"
+           android:hint="如海淀区学淸路紫苑小区201室"
+           />
+
+   </RelativeLayout>
+
+   <Button
+       android:id="@+id/bt_sure"
+       android:layout_width="350dp"
+       android:layout_height="60dp"
+       android:onClick="onClick"
+       android:layout_marginTop="10dp"
+       android:background="@drawable/selector_loginactivity_button"
+       android:text="确定"
+       android:textColor="#fff"
+       android:layout_below="@+id/rl_haveaddressactivity_bottom_5"
+       android:layout_marginLeft="10dp"
+       />
+</RelativeLayout>

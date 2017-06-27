@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    tools:context="com.example.ayou.jk_takeout.mine.view.MessageLoginActivity"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_messageLogin_top"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/color_minefragment_top"
+        >
+
+        <ImageView
+            android:id="@+id/iv_messageLogin_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_left_back"
+            />
+
+        <TextView
+            android:id="@+id/tv_messageLogin_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/iv_messageLogin_back"
+            android:text="短信验证码登录"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_messageLogin_phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/rl_messageLogin_top"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        >
+
+        <EditText
+            android:id="@+id/et_messageLogin_phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:hint="请输入手机号"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_messageLogin_picture_word"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/rl_messageLogin_phoneNumber"
+        android:layout_marginTop="2dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/et_messageLogin_word_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入图文字符"
+            />
+
+        <ImageView
+            android:id="@+id/iv_messageLogin_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.5"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_messageLogin_messageCode"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/ll_messageLogin_picture_word"
+        android:layout_marginTop="2dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/et_messageLogin_messageCode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入验证码"
+            />
+
+        <Button
+            android:id="@+id/bt_messageLogin_obtain_code"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_loginactivity_button"
+            android:text="获取验证码"
+            android:textColor="#fff"
+            android:layout_marginRight="10dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_messageLogin_login"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:background="@drawable/selector_loginactivity_button"
+        android:textColor="#fff"
+        android:text="验证并登录"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/ll_messageLogin_messageCode"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_messageLogin_describe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_messageLogin_login"
+        android:layout_marginTop="30dp"
+        android:text="温馨提示：未注册本站的手机号，登录时将自动注册本站账号，且代表您已同意《用户协议》。"
+        android:layout_marginLeft="10dp"/>
+</RelativeLayout>

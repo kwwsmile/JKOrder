@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:layout_height="50dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        android:id="@+id/type"
+        android:text="种类1">
+    </TextView>
+    <TextView android:gravity="center"
+        android:id="@+id/tvCount"
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:text="1"
+        android:layout_marginRight="10dp"
+        android:textSize="12sp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/circle_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

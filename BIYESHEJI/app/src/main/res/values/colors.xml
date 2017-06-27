@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--底部table栏字体的默认颜色-->
+    <color name="color_table_text">#7d7d7d</color>
+    <!--底部table栏字体被按压的颜色-->
+    <color name="color_table_text_press">#fe5040</color>
+    <!--底部table栏背景颜色-->
+    <color name="color_table_background">#f3f3f3</color>
+    <!--我的界面顶部颜色-->
+    <color name="color_minefragment_top">#20B2AA</color>
+
+    <color name="color_shop_text">#ff6c19</color>
+
+    <color name="color_fengexian">#cecece</color>
+
+
+    <!-- 选择背景 -->
+    <color name="select_bg">#F5F5F5</color>
+    <color name="choose_item_press_color">#f4f4f4</color>
+    <color name="no_color">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="popup_main_background">#b0000000</color>
+
+    <!--  ========== 字体颜色 ==========  -->
+    <!-- 黑色 -->
+    <color name="text_black">#222222</color>
+    <!-- 浅黑色 -->
+    <color name="text_light_black">#333333</color>
+    <!-- 灰色 -->
+    <color name="text_gray">#666666</color>
+    <!-- 浅灰色 -->
+    <color name="text_light_gray">#888888</color>
+    <!-- 编辑框hint -->
+    <color name="text_hint">#cfcfcf</color>
+    <!-- 白色 -->
+    <color name="text_white">#ffffff</color>
+    <!-- 橙色 -->
+    <color name="text_orange">#fa9900</color>
+    <!-- 深橙色 -->
+    <color name="text_dark_orange">#d84801</color>
+    <!-- 蓝色 -->
+    <color name="text_blue">#0572c7</color>
+    <!-- 浅蓝色 -->
+    <color name="text_light_blue">#55b1f8</color>
+
+    <!--  ========== 按钮颜色 ==========  -->
+    <!-- 登录按钮 开始 -->
+    <color name="btn_login_start">#e9e3d6</color>
+    <!-- 登录按钮 结束 -->
+    <color name="btn_login_end">#e1d9c6</color>
+    <!-- 橙色按钮 未点击 -->
+    <color name="btn_oragne_unpress">#fa9900</color>
+    <!-- 橙色按钮 点击 -->
+    <color name="btn_oragne_press">#dadada</color>
+    <!-- 蓝色按钮 点击 -->
+    <color name="btn_blue_unpress">#0096e8</color>
+    <!-- 蓝色按钮 未点击 -->
+    <color name="btn_blue_press">#55b1f8</color>
+    <!-- 灰色按钮 点击 -->
+    <color name="btn_gray_unpress">#a8a8a8</color>
+    <!-- 灰色按钮 未点击 -->
+    <color name="btn_gray_press">#c4c4c4</color>
+    <!-- numberpicker按钮背景色 点击 -->
+    <color name="btn_numpicker_press">#dedede</color>
+    <!-- numberpicker按钮背景色 未点击 -->
+    <color name="btn_numpicker_unpress">#2493fc</color>
+    <!-- 蓝色边框白色填充按钮 边线色 -->
+    <color name="btn_solidblue_stroke">#4c9bd9</color>
+    <!-- 蓝色边框白色填充按钮 点击 填充色 -->
+    <color name="btn_solidblue_solid_press">#e1f2ff</color>
+    <!-- 蓝色边框白色填充按钮 未点击 填充色 -->
+    <color name="btn_solidblue_solid_unpress">#ffffff</color>
+    <!-- edittext轮廓线 -->
+    <color name="bg_edit_stroke">#bababa</color>
+
+    <color name="color_red">#ff00</color>
+</resources>

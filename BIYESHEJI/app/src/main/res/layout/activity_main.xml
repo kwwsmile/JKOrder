@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <!--
+     android:layout_height="0dp"
+     android:layout_weight="1.0"
+     这两种属性用于填充导航栏下菜单栏上的区域，也就是需要滑动的区域
+        -->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            />
+
+        <RadioGroup
+            android:id="@+id/rb_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/color_table_background"
+            >
+            <RadioButton
+                android:id="@+id/rb_firstpage"
+                style="@style/BottomTabStyle"
+                android:checked="true"
+                android:drawableTop="@drawable/selector_firstpage_table"
+                android:text="首页"
+                android:textColor="@color/color_table_text_press"
+                />
+            <RadioButton
+                android:id="@+id/rb_order"
+                style="@style/BottomTabStyle"
+                android:drawableTop="@drawable/selector_order_table"
+                android:text="订单"
+                />
+            <RadioButton
+                android:id="@+id/rb_mine"
+                style="@style/BottomTabStyle"
+                android:drawableTop="@drawable/selector_mine_table"
+                android:text="我的"/>
+        </RadioGroup>
+    </LinearLayout>
+</FrameLayout>

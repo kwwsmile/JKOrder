@@ -1,0 +1,100 @@
+package com.example.ayou.jk_takeout.mine.view;
+
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.example.ayou.jk_takeout.R;
+import com.example.ayou.jk_takeout.firstpage.view.MainActivity;
+import com.example.ayou.jk_takeout.mine.db.DBOpenHelper;
+import com.example.ayou.jk_takeout.mine.model.User;
+
+import java.util.ArrayList;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
+public class AccountDetail extends AppCompatActivity {
+
+    @BindView(R.id.iv_accountdetail_back)
+    ImageView mIvAccountdetailBack;
+    @BindView(R.id.tv_accountdetail_address)
+    TextView mTvAccountdetailAddress;
+    @BindView(R.id.tv_accountdetail_left)
+    TextView mTvAccountdetailLeft;
+    @BindView(R.id.iv_accountdetail_right)
+    TextView mIvMinefragmentRight;
+    @BindView(R.id.tv_accountdetail_update)
+    TextView mTvAccountdetailUpdate;
+    @BindView(R.id.bt_loginactivity_exit)
+    Button mBtLoginactivityExit;
+    @BindView(R.id.tv_accountdetail_login_right)
+    TextView mTvAccountdetailLoginRight;
+    @BindView(R.id.tv_accountdetail_middle)
+    TextView mTvAccountdetailMiddle;
+
+    private DBOpenHelper mDBOpenHelper;
+    private SharedPreferences sp,spAddress;
+    private Boolean isAddAddress;//判断是否添加过地址
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_account_detail);
+        ButterKnife.bind(this);
+        mDBOpenHelper = new DBOpenHelper(this);
+        ArrayList<User> data = mDBOpenHelper.getAllData();
+        User user = data.get(0);
+        String name = user.getName().trim();
+        mTvAccountdetailLoginRight.setText(name);
+        mTvAccountdetailMiddle.setText(name);
+    }
+
+    @OnClick({R.id.iv_accountdetail_back, R.id.tv_accountdetail_address, R.id.iv_accountdetail_right, R.id.tv_accountdetail_update, R.id.bt_loginactivity_exit, R.id.tv_accountdetail_login_right})
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.iv_accountdetail_back:
+                finish();//销毁当前页面
+                break;
+            case R.id.tv_accountdetail_address: //TODO 添加收获地址
+                spAddress= getSharedPreferences("ObtainAddress",Context.MODE_PRIVATE);
+                isAddAddress = spAddress.getBoolean("isAddAddress",true);
+                if(isAddAddress){
+                  startActivity(new Intent(this,NoAddressActvity.class));
+                }else{
+                  startActivity(new Intent(this,AlreadyAddressActivity.class));
+                  //TODO 没写完
+                }
+                break;
+            case R.id.iv_accountdetail_right:    //TODO 绑定手机号
+                break;
+            case R.id.tv_accountdetail_update:  //TODO 修改登录密码
+               startActivity(new Intent(this,RevisePassword.class));
+                break;
+            case R.id.bt_loginactivity_exit:    //TODO 退出登录
+
+                sp = getSharedPreferences("usersInfo", Context.MODE_PRIVATE);
+                //要往SharedPreference中存入东西，需要获取它的编辑器
+                SharedPreferences.Editor edit = sp.edit();
+                edit.putBoolean("isLogin", false);//改变标志
+
+                edit.commit();//提交编辑器
+
+                Intent intent = new Intent(this, MainActivity.class);
+                intent.putExtra("index", 2);
+                startActivity(intent);
+                finish();
+                break;
+
+        }
+    }
+
+
+}

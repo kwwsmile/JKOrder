@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+    defaultConfig {
+        applicationId "com.example.ayou.jk_takeout"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+//1.存放aar文件的位置
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    //第二步：导入aar文件
+    compile name: 'SMSSDK-2.1.4', ext: 'aar'
+    compile name: 'SMSSDKGUI-2.1.4', ext: 'aar'
+
+    compile files('libs/baidumapapi_base_v4_3_0.jar')
+    compile files('libs/baidumapapi_cloud_v4_3_0.jar')
+    compile files('libs/baidumapapi_map_v4_3_0.jar')
+    compile files('libs/baidumapapi_radar_v4_3_0.jar')
+    compile files('libs/baidumapapi_search_v4_3_0.jar')
+    compile files('libs/baidumapapi_util_v4_3_0.jar')
+    compile files('libs/locSDK_6.13.jar')
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'com.android.support:recyclerview-v7:25.1.0'
+    compile 'com.youth.banner:banner:1.4.9'
+    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.yalantis:phoenix:1.2.3'
+    compile 'se.emilsjolander:stickylistheaders:2.7.0'
+    compile 'com.flipboard:bottomsheet-core:1.5.1'
+    compile 'com.flipboard:bottomsheet-commons:1.5.1'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile 'org.simple:androideventbus:1.0.5.1'
+}
